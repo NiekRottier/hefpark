@@ -12,30 +12,29 @@
     <p><a href="index.html">Terug</a></p>
 </div>
 <form id="inputRoomcode">
-    <input type="text" name="userRoomcode" placeholder="1234...">
+    <input type="text" id="userRoomcode" placeholder="1234...">
     <div id="inputRoomcodeRow1">
-        <input type="button" value="1">
-        <input type="button" value="2">
-        <input type="button" value="3">
+        <input type="button" id="button1" value="1">
+        <input type="button" id="button2" value="2">
+        <input type="button" id="button3" value="3">
     </div>
     <div id="inputRoomcodeRow2">
-        <input type="button" value="4">
-        <input type="button" value="5">
-        <input type="button" value="6">
+        <input type="button" id="button4" value="4">
+        <input type="button" id="button5" value="5">
+        <input type="button" id="button6" value="6">
     </div>
     <div id="inputRoomcodeRow3">
-        <input type="button" value="7">
-        <input type="button" value="8">
-        <input type="button" value="9">
+        <input type="button" id="button7" value="7">
+        <input type="button" id="button8" value="8">
+        <input type="button" id="button9" value="9">
     </div>
     <div id="inputRoomcodeRow4">
-        <input type="reset" value="&cross;">
-        <input type="button" value="0">
-        <input type="submit" value="&check;">
+        <input type="reset" id="resetRoomcode" value="&cross;">
+        <input type="button" id="button0" value="0">
+        <input type="button" id="submitRoomcode" value="&check;">
     </div>
 </form>
-<div id="errMsg">
-    <p>Vul de roomcode in</p><!-- JS: Errormsg here -->
-</div>
+<p id="errMsg">Vul de roomcode in</p><!-- JS: Errormsg here -->
+<script src="js/roomcode.js"></script>
 </body>
 </html>
