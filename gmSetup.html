@@ -7,16 +7,27 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<form>
-    <a href="index.html"><input type="button" value="Stop"></a>
+<div id="titleContainer">
+    <h1>Gamemodes</h1>
+    <p><a href="roomcode.html">Terug</a></p>
+</div>
+<div id="gmGallery">
+    <div id="gm1" data-selected="1" data-gamemode="1">
+        <h2 data-parent="gm1">Versus</h2>
+        <p data-parent="gm1">4 spelers</p>
+    </div>
+    <div id="gm2" data-selected="0" data-gamemode="2">
+        <h2 data-parent="gm2">Follow the leader</h2>
+        <p data-parent="gm2">4 spelers</p>
+    </div>
+    <div id="gm3" data-selected="0" data-gamemode="3">
+        <h2 data-parent="gm3">Random tiles</h2>
+        <p data-parent="gm3">4 spelers</p>
+    </div>
+</div>
+<form class="formNextPage">
+    <input class="buttonNextPage" type="button" value="Kies gamemode">
 </form>
-<h1>Gamemode</h1>
-<p>Hier kan je de gamemode kiezen die je wilt spelen.
-    Druk op de pijltjes om een andere gamemode te selecteren.
-    Druk op "Volgende" om de gamemode te kiezen en het spel verder in te stellen.</p>
-<p>BRANCHTEST</p>
-<form>
-    <a href="gameSetup.html"><input type="button" value="Volgende"></a>
-</form>
+<script src="js/gmSetup.js"></script>
 </body>
 </html>
