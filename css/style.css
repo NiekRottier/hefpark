@@ -42,13 +42,15 @@ hr{
     box-shadow: #B0FFE3 1px 1px 10px;
 }
 
-#titleContainer *:nth-child(2){
+#titleContainer *:nth-child(2), #titleContainer a{
     font-size: 4vmin;
     color: #fff9e9;
     text-shadow: -1px 0 2px #00a419, 0 1px 2px #00a419, 1px 0 2px #00a419, 0 -1px 2px #00a419;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
+    margin: 0;
+    padding: 0 0 0 35%;
 }
 
 
@@ -150,20 +152,22 @@ hr{
 #inputRoomcode [type="text"]{
     width: 80%;
     padding: 0 10%;
+    margin-bottom: 2%;
     font-size: 10vmin;
+    border-radius: 20px;
 }
 
 #inputRoomcode [type="button"], #inputRoomcode [type="reset"], #inputRoomcode [type="submit"]{
-    height: 10vmax;
-    width: 10vmax;
+    height: 14vh;
+    width: 14vh;
     border-radius: 50%;
-    font-size: 5vmin;
+    font-size: 5vh;
 }
 
 #inputRoomcode div{
     display: flex;
-    justify-content: space-between;
-    width: 67%;
+    justify-content: center;
+    width: 100%;
 }
 
 #inputRoomcodeRow1 input{
