@@ -7,23 +7,35 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<a href="index.html">Terug</a>
-<h1>Roomcode</h1>
+<div id="titleContainer">
+    <h1>Roomcode</h1>
+    <a href="index.html">Terug</a>
+</div>
 <form id="inputRoomcode">
-    <input type="text" placeholder="Roomcode hier..."> <!-- CSS: #inputRoomcode:first-child{} -->
-    <input class="numpadRoomcode" type="button" value="1">
-    <input class="numpadRoomcode" type="button" value="2">
-    <input class="numpadRoomcode" type="button" value="3">
-    <input class="numpadRoomcode" type="button" value="4">
-    <input class="numpadRoomcode" type="button" value="5">
-    <input class="numpadRoomcode" type="button" value="6">
-    <input class="numpadRoomcode" type="button" value="7">
-    <input class="numpadRoomcode" type="button" value="8">
-    <input class="numpadRoomcode" type="button" value="9">
-    <input class="numpadRoomcode" type="button" value="0">
-    <input type="submit" value="Enter"> <!-- CSS: #inputRoomcode:last-child{} -->
+    <input type="text" placeholder="1234...">
+    <div id="inputRoomcodeRow1">
+        <input type="button" value="1">
+        <input type="button" value="2">
+        <input type="button" value="3">
+    </div>
+    <div id="inputRoomcodeRow2">
+        <input type="button" value="4">
+        <input type="button" value="5">
+        <input type="button" value="6">
+    </div>
+    <div id="inputRoomcodeRow3">
+        <input type="button" value="7">
+        <input type="button" value="8">
+        <input type="button" value="9">
+    </div>
+    <div id="inputRoomcodeRow4">
+        <input type="reset" value="&cross;">
+        <input type="button" value="0">
+        <input type="submit" value="&check;">
+    </div>
 </form>
-<a href="gmSetup.html">Placeholder link</a>
-<!-- JS: Errormsg here -->
+<div id="errMsg">
+    <p>Vul de roomcode in</p><!-- JS: Errormsg here -->
+</div>
 </body>
 </html>

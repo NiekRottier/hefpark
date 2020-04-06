@@ -32,24 +32,28 @@ hr{
     border-bottom: white solid 2px;
 }
 
-#titleContainer h1:last-child{
-    font-size: 4vmin;
-    text-shadow: -1px 0 2px #00a419, 0 1px 2px #00a419, 1px 0 2px #00a419, 0 -1px 2px #00a419;
-    padding-left: 35%;
-    margin: 0;
-    text-transform: uppercase;
-}
-
 #titleContainer{
     width: 60vmin;
     height: auto;
     padding: 1% 3% 0.5% 3%;
+    margin-bottom: 2vh;
     background-color: #d6fffa;
     border-radius: 50px;
     box-shadow: #B0FFE3 1px 1px 10px;
 }
 
-#expSteps{
+#titleContainer *:nth-child(2){
+    font-size: 4vmin;
+    color: #fff9e9;
+    text-shadow: -1px 0 2px #00a419, 0 1px 2px #00a419, 1px 0 2px #00a419, 0 -1px 2px #00a419;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* INDEX */
+#stepsContainer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -68,23 +72,27 @@ hr{
     text-align: center;
 }
 
+/* Green tiles */
 .steps:nth-child(1), .steps:nth-child(4), .steps:nth-child(7), .steps:nth-child(10){
     width: 55%;
     background-color: #85F5AF;
     box-shadow: #00A419 0 1px 10px;
 }
 
+/* Blue tiles */
 .steps:nth-child(2), .steps:nth-child(6), .steps:nth-child(8){
     background-color: #3AE4FF;
     box-shadow: #00bdff 0 1px 10px;
 }
 
+/* Left tiles */
 .steps:nth-child(2), .steps:nth-child(5), .steps:nth-child(8){
     border-bottom-right-radius: unset;
     border-top-right-radius: unset;
     text-align: right;
 }
 
+/* Right tiles */
 .steps:nth-child(3), .steps:nth-child(6), .steps:nth-child(9){
     border-bottom-left-radius: unset;
     border-top-left-radius: unset;
@@ -122,4 +130,55 @@ hr{
     text-shadow: -1px 0 2px #00A419, 0 1px 2px #00A419, 1px 0 2px #00A419, 0 -1px 2px #00A419, 1px 1px 7px #00A419;
     text-align: center;
     margin: 0;
+}
+
+/* ROOMCODE */
+#inputRoomcode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vmin;
+    height: 70vh;
+}
+
+#inputRoomcode input{
+    font-family: Bahnschrift, Verdana, Arial, sans-serif;
+    font-weight: 700;
+}
+
+#inputRoomcode [type="text"]{
+    width: 80%;
+    padding: 0 10%;
+    font-size: 10vmin;
+}
+
+#inputRoomcode [type="button"], #inputRoomcode [type="reset"], #inputRoomcode [type="submit"]{
+    height: 10vmax;
+    width: 10vmax;
+    border-radius: 50%;
+    font-size: 5vmin;
+}
+
+#inputRoomcode div{
+    display: flex;
+    justify-content: space-between;
+    width: 67%;
+}
+
+#inputRoomcodeRow1 input{
+    background-color: #3AE4FF;
+}
+#inputRoomcodeRow2 input{
+    background-color: #85F5AF;
+}
+#inputRoomcodeRow3 input{
+    background-color: #ff9979;
+}
+#inputRoomcodeRow4 input{
+    background-color: #ff3f34;
+}
+
+#errMsg{
+    color: #3AE4FF;
 }
