@@ -7,15 +7,13 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<h1>Game instellingen</h1>
-<a href="gmSetup.html">Terug</a>
-<div id="playersSetup">
-    <h2>Spelers</h2>
-    <!-- JS: Insert inputfield for playernames, amount depends on GM -->
+<div id="titleContainer">
+    <h1>Instellingen</h1>
+    <p><a href="gmSetup.html">Terug</a></p>
 </div>
-<div id="gameNameSetup">
-    <h2>Gamenaam</h2>
-    <!-- JS: Insert random gamename -->
+<div id="playerSetup">
+    <h2>Spelers</h2>
+    <!-- JS: Insert random playerNames -->
 </div>
 <div id="difficultySetup">
     <form id="difficulty">
@@ -30,14 +28,9 @@
 <div id="timerSetup">
     <h2>Tijd</h2>
 </div>
-<div id="overviewButton">
-    <form>
-        <a href="gameProgress.html"><input type="button" value="Zie overzicht"></a> <!-- Remove link, redirect with JS -->
-    </form>
-</div>
-<div id="tipSetup">
-    <h3>Tip:</h3>
-    <!-- JS: Insert random tip -->
-</div>
+<form class="formNextPage">
+    <input class="buttonNextPage" id="buttonToGameProgress" type="button" value="Start!">
+</form>
+<script src="js/gameSetup.js"></script>
 </body>
 </html>
