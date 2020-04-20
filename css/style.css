@@ -8,7 +8,7 @@ body{
     height: 94vh;
     width: 94vw;
     margin: 3vh 3vw;
-    background-image: url("img/bg2.jpg");
+    background-image: url("../img/bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: repeat-x;
@@ -247,4 +247,12 @@ hr{
 
 .selectedGm{
     border: 2px solid darkgray;
+}
+
+
+/* GAMESETUP */
+#playerSetup, #difficultySetup, #timerSetup{
+    border-radius: 30px;
+    background-color: #d6fffa;
+    padding: 0 20px;
 }

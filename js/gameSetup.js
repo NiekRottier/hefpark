@@ -7,7 +7,7 @@ let playerName = ["Phineas", "Ferb", "Spongebob", "Patrick", "Octo", "Sandy", "K
 let playerAmount;
 let params = new URLSearchParams(location.search);
 let selectedGm = params.get('gm');
-let pCreate = document.createElement('p');
+    console.log(params.get('gm'));
 let playerSetup = document.getElementById('playerSetup');
 
 
@@ -23,14 +23,11 @@ if (selectedGm === '1' || selectedGm === '3'){
 
 for (let i = 0; i < playerAmount; i++){
     let x = Math.random()*playerName.length;
+    let pCreate = document.createElement('p');
     pCreate.innerHTML = playerName[Math.floor(x)];
     playerSetup.appendChild(pCreate);
     console.log(playerName[Math.floor(x)])
 }
-
-
-
 }
 
 
-console.log(params.get('gm'));
