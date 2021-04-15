@@ -11,14 +11,21 @@
 <form id="prevPlayer">
     <input type="button" value="&gt;">
 </form>
-<div id="playerDisplay"></div> <!-- JS: Add playername, score and other stats -->
+
+<div id="playerDisplay">
+    <h2>&lt;Playername&gt;</h2>
+    <h2>Score: 123</h2>
+</div> <!-- JS: Add playername, score and other stats -->
+
 <form id="nextPlayer">
     <input type="button" value="&lt;">
 </form>
 
-<form>
-    <a href="index.html"><input type="button" value="Stoppen"></a> <!-- Remove link, redirect with JS -->
-    <a href="gameProgress.html"><input type="button" value="Speel opnieuw"></a> <!-- Remove link, redirect with JS -->
+<form class="formNextPage">
+    <input id="homeButton" class="buttonNextPage" type="button" value="Stoppen">
+    <input id="playAgainButton" class="buttonNextPage" type="button" value="Speel opnieuw">
 </form>
+
+<script src="js/endscreen.js"></script>
 </body>
 </html>
