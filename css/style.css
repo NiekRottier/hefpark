@@ -253,7 +253,26 @@ hr{
 #playerSetup, #difficultySetup, #timerSetup{
     border-radius: 30px;
     background-color: #d6fffa;
-    padding: 0 20px;
+    padding: 10px;
+    width: 40vw;
+    height: min-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#playerSetup h2{
+    margin: 0;
+}
+
+#timerSetup input{
+    height: 5vh;
+    width: 10vw;
+}
+
+#timerSetup h2{
+    margin: 0;
 }
 
 
