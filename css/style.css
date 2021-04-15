@@ -89,13 +89,13 @@ hr{
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
-    width: 98vmin;
+    width: 58vmin;
     height: 60vh;
 }
 
 .steps{
     width: 50%;
-    height: 6vh;
+    height: 8vh;
     background-color: #FFC8B3;
     box-shadow: #ff9979 0 1px 10px;
     border-radius: 20px;
@@ -104,19 +104,23 @@ hr{
 
 /* Green tiles */
 .steps:nth-child(1), .steps:nth-child(4), .steps:nth-child(7), .steps:nth-child(10){
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 55%;
     background-color: #85F5AF;
-    box-shadow: #00A419 0 1px 10px;
 }
 
 /* Blue tiles */
 .steps:nth-child(2), .steps:nth-child(6), .steps:nth-child(8){
     background-color: #3AE4FF;
-    box-shadow: #00bdff 0 1px 10px;
 }
 
 /* Left tiles */
 .steps:nth-child(2), .steps:nth-child(5), .steps:nth-child(8){
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     border-bottom-right-radius: unset;
     border-top-right-radius: unset;
     text-align: right;
@@ -124,21 +128,28 @@ hr{
 
 /* Right tiles */
 .steps:nth-child(3), .steps:nth-child(6), .steps:nth-child(9){
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     border-bottom-left-radius: unset;
     border-top-left-radius: unset;
     text-align: left;
 }
 
 .steps p, .steps pre{
-    font-size: 5vh;
     margin: 0;
     height: inherit;
     overflow: visible;
 }
 
+.steps p{
+    font-size: 4vh;
+    height: 5vh;
+}
+
 .steps pre{
-    font-size: 30px;
-    padding: 0.5vh 0;
+    font-size: 25px;
+    height: 30px;
 }
 
 /* ROOMCODE */
