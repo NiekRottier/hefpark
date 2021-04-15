@@ -277,17 +277,17 @@ hr{
     align-items: center;
 }
 
-#playerSetup h2{
+#playerSetup h2, #difficultySetup h2, #timerSetup h2{
     margin: 0;
+}
+
+#playerSetup p{
+    margin: 5px;
 }
 
 #timerSetup select{
-    height: 5vh;
+    height: 4vh;
     width: 10vw;
-}
-
-#timerSetup h2{
-    margin: 0;
 }
 
 
