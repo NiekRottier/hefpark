@@ -269,7 +269,7 @@ hr{
     border-radius: 30px;
     background-color: #d6fffa;
     padding: 10px;
-    width: 40vw;
+    width: 30vw;
     height: min-content;
 
     display: flex;
@@ -281,7 +281,7 @@ hr{
     margin: 0;
 }
 
-#timerSetup input{
+#timerSetup select{
     height: 5vh;
     width: 10vw;
 }
