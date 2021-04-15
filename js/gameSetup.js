@@ -7,27 +7,25 @@ let playerName = ["Phineas", "Ferb", "Spongebob", "Patrick", "Octo", "Sandy", "K
 let playerAmount;
 let params = new URLSearchParams(location.search);
 let selectedGm = params.get('gm');
-    console.log(params.get('gm'));
+console.log(params.get('gm'));
 let playerSetup = document.getElementById('playerSetup');
-
+let startButton = document.getElementById('startButton');
 
 function init()
 {
+    if (selectedGm === '2' || selectedGm === '3'){
+        playerAmount = 4;
+    } else if (selectedGm === '1'){
+        playerAmount = 2
+    }
 
+    for (let i = 0; i < playerAmount; i++){
+        let x = Math.random()*playerName.length;
+        let pCreate = document.createElement('p');
+        pCreate.innerHTML = playerName[Math.floor(x)];
+        playerSetup.appendChild(pCreate);
+        console.log(playerName[Math.floor(x)])
+    }
 
-if (selectedGm === '1' || selectedGm === '3'){
-    playerAmount = 4;
-} if (selectedGm === '2'){
-    playerAmount = 2
+    startButton.addEventListener("click", () => window.location.replace("gameProgress.html"))
 }
-
-for (let i = 0; i < playerAmount; i++){
-    let x = Math.random()*playerName.length;
-    let pCreate = document.createElement('p');
-    pCreate.innerHTML = playerName[Math.floor(x)];
-    playerSetup.appendChild(pCreate);
-    console.log(playerName[Math.floor(x)])
-}
-}
-
-

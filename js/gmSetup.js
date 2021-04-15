@@ -30,7 +30,5 @@ function selectGm(e){
     }
 }
 
-document.getElementById('buttonToGameSetup').addEventListener('click', function redirectToGameSetup(){
-    window.location.replace("gameSetup.html?gm="+selectedGm);
-})
+document.getElementById('buttonToGameSetup').addEventListener('click', ()=>window.location.replace("gameSetup.html?gm="+selectedGm))
 }

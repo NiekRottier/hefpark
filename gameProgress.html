@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
     <title>Hefpark Hops'</title>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 </head>
@@ -10,9 +10,18 @@
 <!-- JS: Gamename -->
 <!-- JS: Score -->
 <!-- JS: Timer -->
-<form id="endGame">
-    <a href="index.html"><input type="button" value="Stop spel"></a>
-    <!-- JS: "Are you sure"-pop-up --> <!-- Remove link, redirect with JS -->
+<form class="formNextPage">
+    <input id="stopButton" class="buttonNextPage" type="button" value="Stop spel">
 </form>
+
+<div id="pop-up">
+    <p>Weet je het zeker?</p>
+    <div>
+        <input id="endGame" type="button" value="Stop spel">
+        <input id="continueGame" type="button" value="Blijf spelen">
+    </div>
+</div>
+
+<script src="js/gameProgress.js"></script>
 </body>
 </html>

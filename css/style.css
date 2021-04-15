@@ -73,7 +73,6 @@ hr{
     border-radius: 50px;
     box-shadow: #B0FFE3 1px 1px 10px;
 
-    text-wrap: normal;
     font-size: 6vmin;
     text-transform: uppercase;
     color: #fff9e9;
@@ -255,4 +254,46 @@ hr{
     border-radius: 30px;
     background-color: #d6fffa;
     padding: 0 20px;
+}
+
+
+/* GAMEPROGRESS */
+#pop-up{
+    position: absolute;
+    top: 35vh;
+    left: 20vw;
+
+    height: 28vh;
+    width: 60vw;
+    padding: 20px;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5vw;
+    background-color: #B0FFE3;
+    box-shadow: 1px 1px 20px black;
+}
+
+#pop-up p{
+    font-size: larger;
+}
+
+#pop-up input{
+    height: 8vh;
+    width: 15vw;
+
+    border-radius: 5px;
+
+    font-size: larger;
+}
+
+#pop-up #endGame{
+    background-color: red;
+}
+
+#pop-up #continueGame{
+    background-color: greenyellow;
 }
