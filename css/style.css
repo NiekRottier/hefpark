@@ -202,7 +202,11 @@ hr{
 }
 
 #errMsg{
-    color: #3AE4FF;
+    color: #000000;
+    background-color: #3AE4FF;
+    border: solid 2px red;
+
+    font-size: larger;
 }
 
 

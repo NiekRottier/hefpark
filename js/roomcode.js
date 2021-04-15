@@ -22,7 +22,7 @@ function validateRoomcode(){
     } else {
         console.log(roomcodeText.value);
         let errMsg = document.getElementById(`errMsg`);
-        errMsg.innerHTML = `De opgegeven roomcode klopt niet`;
+        errMsg.innerHTML = `De ingevulde roomcode klopt niet`;
     }
 }
 }
